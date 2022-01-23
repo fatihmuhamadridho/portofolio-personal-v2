@@ -1,0 +1,128 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+nav,
+.nav-link, ul,
+.nav-auth {
+  @include flex-row();
+}
+
+nav {
+  width: 100%;
+  padding: 20px 25px;
+  justify-content: space-between;
+  .nav-link,
+  .nav-auth {
+    align-items: center;
+  }
+
+  .nav-link {
+    ul {
+      padding-left: 30px;
+    }
+    ul li {
+      margin-right: 30px;
+      list-style: none;
+      a:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition: 0.6s;
+      }
+    }
+  }
+
+  .nav-auth .btn-signup {
+    border: 1px solid black;
+  }
+
+  .nav-auth button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 25px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .nav-auth button:hover {
+    background: rgb(63, 63, 63);
+    color: white;
+    transition: 0.6s
+  }
+}
+
+.content {
+  @include flex-row();
+  justify-content: space-between;
+  .main-content {
+    margin-left: 100px;
+    width: 100%;
+    .content-fill {
+      margin-top: 70px;
+      button {
+        width: 170px; height: 50px;
+        background-color: #39B8AB;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        span {
+          color: #ACE2DC;
+          color: rgba(255, 255, 255, 0.651)
+        }
+      }
+      button:hover {
+        background: #2c8b82;
+        cursor: pointer;
+        transition: 0.6s;
+      }
+    }
+    .content-fill .fill-header h1 {
+      margin: 0;
+      font-size: 50px;
+    }
+  }
+  .content-supported {
+    @include flex-row();
+    margin: 120px 0px 30px 0;
+    span.brand {
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.checkbtn,
+#check {
+  display: none;
+}

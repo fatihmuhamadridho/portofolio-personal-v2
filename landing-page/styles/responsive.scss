@@ -1,0 +1,33 @@
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 670px) {
+    .checkbtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-auth ul {
+        position: absolute;
+        width: 100%; height: 125vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 00px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-auth ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav-auth ul li button {
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+        left: 650px;
+    }
+}
