@@ -1,0 +1,22 @@
+@media(max-width: 670px) {
+    .navbar_handphone {
+        background-color: rgb(39, 39, 39);
+
+        ul {
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            padding: 20px;
+        }
+    }
+}
+
+@media(min-width: 670px) {
+    .navbar_handphone {
+        display: none;
+    }
+}
