@@ -9,7 +9,7 @@ import {
 
 export default function NavbarBottom() {
     return (
-        <div className={styles.navbar_handphone}>
+        <div className={styles.navbarBottom_handphone}>
             <ul>
                 <li><a href="">
                     <FontAwesomeIcon icon={faHome} className={styles.icon} />

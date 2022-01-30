@@ -23,6 +23,11 @@ const HomePage: NextPage = () => {
                 <h1>Popular on netflix</h1>
                 <Cards />
                 <Cards />
+                <Cards />
+                <Cards />
+                <div style={{ height: "5000px" }}>
+
+                </div>
             </div>
             <NavbarBottom />
         </div>

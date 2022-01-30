@@ -1,5 +1,8 @@
 @media(max-width: 670px) {
-    .navbar_handphone {
+    .navbarBottom_handphone {
+        width: 100%;
+        bottom: 0;
+        position: fixed;
         background-color: #121212;
 
         ul {
@@ -36,7 +39,7 @@
 }
 
 @media(min-width: 670px) {
-    .navbar_handphone {
+    .navbarBottom_handphone {
         display: none;
     }
 }

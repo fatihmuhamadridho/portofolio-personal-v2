@@ -26,6 +26,10 @@
     }
 
     .navbarTop_handphone {
+        width: 100%;
+        position: fixed;
+        background-color: black;
+        top: 0;
         display: flex;
 
         .nav_header {
