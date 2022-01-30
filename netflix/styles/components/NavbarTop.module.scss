@@ -41,14 +41,39 @@
                 align-items: center;
 
                 .nav_search,
-                h1 {
+                .nav_icon {
                     margin: 0;
+                }
+
+                .nav_icon {
+                    width: 35px;
+                }
+
+                .nav_search input {
+                    width: 285px; height: 35px;
+                }
+
+                .nav_profile {
+                    width: 35px; height: 35px;
+                    img {
+                        border-radius: 2px;
+                    }
                 }
             }
 
-            .nav_headerBottom ul {
-                list-style: none;
+            .nav_headerBottom {
+                width: 100%;
+                margin: 0;
                 display: flex;
+                justify-content: center;
+
+                ul {
+                    width: 80%;
+                    margin: 0; padding: 0;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                }
 
                 li {
                     padding: 10px;

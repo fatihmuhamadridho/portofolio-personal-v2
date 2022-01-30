@@ -1,4 +1,5 @@
 import styles from '../../styles/components/NavbarTop.module.scss';
+import Image from 'next/image';
 
 export default function NavbarTop() {
     return (
@@ -18,18 +19,30 @@ export default function NavbarTop() {
             <div className={styles.navbarTop_handphone}>
                 <div className={styles.nav_header}>
                     <div className={styles.nav_headerTop}>
-                        <h1>N</h1>
+                        <div className={styles.nav_icon}>
+                            <Image 
+                                src={'/netflix-icon.png'} 
+                                alt='' 
+                                width={'100%'} 
+                                height={'100%'} />
+                        </div>
                         <div className={styles.nav_search}>
                             <input type="search" placeholder='Search' />
                         </div>
-                        <h1>O</h1>
+                        <div className={styles.nav_profile}>
+                            <Image 
+                                src={'/tirtaps.jpeg'}
+                                alt=''
+                                width={'100%'}
+                                height={'100%'}
+                            />
+                        </div>
                     </div>
                     <div className={styles.nav_headerBottom}>
                         <ul>
                             <li><a href="">TV Shows</a></li>
                             <li><a href="">Movies</a></li>
-                            <li><a href="">Categories</a></li>
-                            <li><a href="">V</a></li>
+                            <li><a href="">Categories V</a></li>
                         </ul>
                     </div>
                 </div>

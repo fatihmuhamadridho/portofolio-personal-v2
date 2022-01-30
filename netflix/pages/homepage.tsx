@@ -5,20 +5,26 @@ import NavbarTop from "./components/navbar_top";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import NavbarBottom from "./components/navbar_bottom";
+import Image from "next/image";
 
 const HomePage: NextPage = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.navbarTop}>
-                <NavbarTop />
+            <NavbarTop />
+            <div className={styles.contentHeader}>
+                <Image
+                    src={'/tirtaps.jpeg'}
+                    alt=""
+                    width={'100%'}
+                    height={'100%'}
+                />
             </div>
-            <h1>HomePage</h1>
-            <Cards />
-            <Cards />
-            <Cards />
-            <div className={styles.navbarBottom}>
-                <NavbarBottom />
+            <div className={styles.contentPopular}>
+                <h1>Popular on netflix</h1>
+                <Cards />
+                <Cards />
             </div>
+            <NavbarBottom />
         </div>
     )
 }
