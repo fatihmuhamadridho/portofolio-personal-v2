@@ -12,12 +12,24 @@
         }
 
         li {
-            padding: 5px;
+            padding: 25px;
             display: flex;
             flex-direction: column;
 
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             p {
+                font-size: 10px;
+                font-weight: bold;
                 margin: 0;
+            }
+
+            .icon {
+                width: 30px; height: 100%;
             }
         }
     }
