@@ -17,7 +17,9 @@ const HomePage: NextPage = () => {
                     alt=""
                     width={'100%'}
                     height={'100%'}
-                />
+                >
+                    <h1 style={{ top: "0", position: "absolute", transform: "translate(-50%, -50%)" }}>Test</h1>
+                </Image>
             </div>
             <div className={styles.contentPopular}>
                 <h1>Popular on netflix</h1>
