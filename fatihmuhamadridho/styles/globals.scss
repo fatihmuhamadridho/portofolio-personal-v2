@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0; margin: 0;
   scroll-behavior: smooth;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -14,121 +16,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.container {
-  width: 100%; height: 100%;
-  padding: 0px 50px !important;
-  position: relative;
-  margin: 0px 0px 0px 0px; padding: 0;
-  background-color: #1B1B1B;
-  color: white;
-}
-
-nav {
-  width: 100%;
-  padding-top: 10px;
-  padding-right: 70px;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  .nav-profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .nav-logo {
-      width: 40px;
-      height: 40px;
-      margin-right: 15px;
-      cursor: pointer;
-    }
-  }
-
-  .nav-link {
-    ul {
-      display: flex;
-      flex-direction: row;
-      li {
-        margin: 0px 20px;
-        list-style: none;
-        a {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}
-
-.container-main {
-  padding-top: 95px;
-}
-
-.container-home {
-  display: flex;
-  flex-direction: row;
-
-  .home-intro {
-    margin: 105px 0px 35px 0px;
-
-    h1 {
-      margin: 2px;
-      color: #906D51;
-      font-size: 36px;
-      font-weight: bold;
-    }
-
-
-    .intro-socialmedia {
-      p {
-        color: #989898;
-        font-size: 13px;
-        margin-top: 35px;
-      }
-    }
-  }
-
-  .home-selfImage {
-    display: flex;
-    justify-content: center;
-    Image {
-      width: 425px;
-    }
-  }
-
-  .home-words {
-    margin: 105px 0px 0px 25px;
-
-    .words-myself {
-      h1 {
-        margin: 2px;
-        color: #AFAFAF;
-        font-size: 34px;
-      }
-    }
-
-    .words-someone {
-      margin-top: 70px;
-      h1 {
-        margin: 2px;
-        color: #6C5141;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      p {
-        color: #544236;
-      }
-    }
-  }
-}
-
-#home {
-  height: 720px;
-}
-
-#about {
-  height: 720px;
 }

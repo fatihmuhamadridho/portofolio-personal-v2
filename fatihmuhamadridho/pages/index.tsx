@@ -6,54 +6,54 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faInstagram, faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
+import Footer from './components/footer'
+import styles from '../styles/Home.module.scss';
+import RecentPosts from './components/home/recent_posts'
+import FeaturedWorks from './components/home/featured_works'
 
 const Home: NextPage = () => {
   return (
-    <div className='container'>
-      <Head>
-        <title>Fatih Muhamad Ridho</title>
-      </Head>
+    <div className={styles.layout}>
       <Navbar />
-      <div className='container-main'>
-        <div className='container-home' id='home'>
-          <div className='home-intro'>
-            <h1>Hi, I`m</h1>
-            <h1>Fatih Muhamad Ridho</h1>
-            <h1>Frontend Web</h1>
-            <h1>Web Developer</h1>
-            <div className='intro-socialmedia'>
-              <p>Find me on :</p>
-              <a href="https://www.instagram.com/fatihmuhamadridho/" target={"_blank"} rel='noreferrer'>
-                <FontAwesomeIcon icon={faInstagram} size='2x' style={{ color: "#AFAFAF", marginRight: "25px" }} />
-              </a>
-              <a href="https://api.whatsapp.com/send/?phone=%2B6282114751004" target={"_blank"} rel='noreferrer'>
-                <FontAwesomeIcon icon={faWhatsapp} size='2x' style={{ color: "#AFAFAF", marginRight: "25px" }} />
-              </a>
-            </div>
+      <div className={styles.container}>
+        <div className={styles.section1}>
+          <div className={styles.section1_content}>
+            <h1>Hi, I am Fatih</h1>
+            <h1>Frontend Web Developer</h1>
+            <p>Frontend Website Developer who is creative and collaborative and has quite a lot of expertise. Has 6 months experience in developing websites using next.js and also scss. Has a hardworking and unyielding nature. Focus on self-development and achieving goals.</p>
+            <button>Download Resume</button>
           </div>
-          <div className='home-selfImage'>
-            <Image 
-              src={"/FatihMuhamadRidho.png"} 
-              alt=''
-              width={"425px"}
-              height={"625px"} />
+            <div className={styles.section1_image}>
+              <Image
+                src={"/fatihmuhamadridho.jpeg"}
+                alt=""
+                width={"243px"}
+                height={"243px"}
+                layout="responsive"
+              />
+            </div>
+        </div>
+        <div className={styles.section2}>
+          <div className={styles.section2_header}>
+            <h2>Recent posts</h2>
+            <p>View all</p>
           </div>
-          <div className='home-words'>
-            <div className='words-myself'>
-              <h1>I love programming</h1>
-              <h1>and exploring</h1>
-              <h1>creative web design</h1>
-            </div>
-            <div className='words-someone'>
-              <h1>&quot;Keep believing in your dream&quot;</h1>
-              <p>Elon Musk</p>
-            </div>
+          <div className={styles.section2_cards}>
+            <RecentPosts />
+            <RecentPosts />
           </div>
         </div>
-        <div className='container-about' id='about'>
-          <h1>About Me</h1>
+        <div className={styles.section3}>
+          <h2 style={{ fontSize: "22px", fontWeight: "400", lineHeight: "60px" }}>Featured works</h2>
+          <div className={styles.section3_cards}>
+            <FeaturedWorks years={'2020'} detail={'Dasboard'} />
+            <FeaturedWorks years={'2018'} detail={'Illustration'} />
+            <FeaturedWorks years={'2017'} detail={'Content Management System'} />
+            <FeaturedWorks years={'2015'} detail={'Manage'} />
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

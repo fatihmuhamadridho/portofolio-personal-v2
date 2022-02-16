@@ -1,26 +1,14 @@
 import Image from "next/image"
+import styles from '../../styles/Navbar.module.scss'
 
 export default function Navbar() {
     return (
-        <nav>
-            <a href="#" className="nav-profile">
-                <div className="nav-logo">
-                    <Image 
-                        src={"/favicon.ico"} 
-                        alt="" 
-                        width={"100%"} 
-                        height={"100%"} />
-                </div>
-                <p>FatihMuhamadRidho</p>
-            </a>
-            <div className="nav-link">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">Let`s Talk</a></li>
-                </ul>
-            </div>
+        <nav className={styles.navbar}>
+            <ul>
+                <li><a href="">Works</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
     )
 }
