@@ -2,14 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Navbar from './components/navbar'
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faInstagram, faWhatsapp
-} from '@fortawesome/free-brands-svg-icons'
 import Footer from './components/footer'
 import styles from '../styles/Home.module.scss';
-import RecentPosts from './components/home/recent_posts'
 import FeaturedWorks from './components/home/featured_works'
+import RecentPosts from './components/home/recent_posts'
 
 const Home: NextPage = () => {
   return (
@@ -33,12 +29,12 @@ const Home: NextPage = () => {
               />
             </div>
         </div>
-        <div className={styles.section2}>
-          <div className={styles.section2_header}>
-            <h2>Recent posts</h2>
-            <p>View all</p>
+        <div className={styles.section2} style={{ width: "100%", backgroundColor: "#EDF7FA", display: "flex", flexDirection: "column"}}>
+          <div className={styles.section2_header} style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+            <h2 style={{ fontSize: "22px", fontWeight: "400", lineHeight: "60px"}}>Recent posts</h2>
+            <p style={{ fontSize: "16px", fontWeight: "normal", lineHeight: "23px"}}>View all</p>
           </div>
-          <div className={styles.section2_cards}>
+          <div className={styles.section2_cards} style={{ display: "flex", justifyContent: "space-between" }}>
             <RecentPosts />
             <RecentPosts />
           </div>

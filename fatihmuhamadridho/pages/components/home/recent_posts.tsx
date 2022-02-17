@@ -1,4 +1,4 @@
-import styles from '../../../styles/Posts.module.scss';
+import styles from '../../../styles/RecentPosts.module.scss';
 
 export default function RecentPosts() {
     return (
